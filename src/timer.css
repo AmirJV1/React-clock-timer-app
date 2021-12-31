@@ -1,0 +1,42 @@
+input {	
+	outline: none;
+	border: 2px solid black;
+	background-color: aliceblue;
+	color: #000;
+}
+input:focus{
+	border: rgb(106, 11, 119) 2px solid;
+}
+.timerSetUp,
+.timerInputContainer,
+.btns {
+	background-color: #000;
+}
+.timerSetUp{
+	min-width: 25vw;
+	padding: 10px;
+}
+.contdown{
+	background-color: transparent;
+	text-align: center;
+	font-size: 40px;
+}
+.finished{
+	animation: infinite 0.7s ease-in finishedCount  ;
+}
+@keyframes finishedCount {
+	0%{
+		transform: rotate(10deg);
+		color: rgb(126, 6, 6);
+	}
+	50%{
+		transform: rotate(-10deg);
+	}
+	70%{
+		transform: rotate(10deg);
+	}
+	100%{
+		transform: rotate(-10deg);
+		color: rgb(255, 0, 0);
+	}
+}

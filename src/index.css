@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap');
+*{
+    font-family: 'Dosis', sans-serif;
+    font-size: 20px;
+    color: aliceblue;
+    background-color: rgb(40, 34, 51);
+}
+*::selection{
+    color: black;
+    background-color: rgb(196, 209, 15);
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+}
+button{
+    border: none;
+    background-color: transparent;
+}
+button:hover{
+    cursor: pointer;
+    color: rgb(142, 5, 255);
+}
+button:focus{
+    outline: none;
+    animation: normal 0.5s shake;
+}
+@keyframes shake {
+    0%{
+        transform: rotate(20deg);
+    }
+    50%{
+        transform: rotate(-20deg);
+    }
+    50%{
+        transform: rotate(20deg);
+    }
+    80%{
+        transform: rotate(-20deg);
+    }
+    100%{
+        transform: rotate(20deg);
+    }
+}

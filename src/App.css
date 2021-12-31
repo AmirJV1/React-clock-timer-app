@@ -1,0 +1,49 @@
+h1 {
+	font-size: 50px;
+	text-align: center;
+}
+.clockContainer {
+	background-color: rgb(240, 248, 255);
+	min-width: 30vw;
+	min-height: 20vh;
+	box-sizing: border-box;
+	align-self: center;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+}
+.clockContainer:hover {
+	background-color: rgb(255, 255, 255);
+}
+.clockContainer p {
+	font-size: 270%;
+}
+.clockContainer span{
+  font-size: 100%;
+}
+.clockContainer p,
+.clockContainer span {
+	cursor: default;
+	color: rgb(40, 34, 51);
+	font-weight: 700;
+	text-align: center;
+	background-color: transparent;
+}
+footer{
+	font-size: 30px;
+	position: fixed;
+	bottom: 5px;
+	right: 10px;
+}
+footer a {
+	font-size: 30px;
+	text-decoration: 1px wavy underline;
+}
+footer span{
+	font-size: 30px;
+	transition: all 1s ease-in-out;
+	color: rgb(0, 255, 234);
+}
+footer a  :hover{
+	font-size: 35px;
+}
